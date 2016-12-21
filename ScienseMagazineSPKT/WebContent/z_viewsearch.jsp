@@ -34,8 +34,8 @@
 </head>
 <body>
 	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:1400/tapchikhspkt?useUnicode=true&characterEncoding=UTF-8"
-		user="root" password="12345678" />
+		url="jdbc:mysql://localhost:1400/tapchikhspkt" user="root"
+		password="12345678" />
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2"></div>
