@@ -92,7 +92,7 @@
 				<div class="container">
 					<div class="row">
 						<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-							url="jdbc:mysql://localhost:1400/tapchikhspkt" user="root"
+							url="jdbc:mysql://localhost:3306/tapchikhspkt" user="root"
 							password="12345678" />
 						<sql:query dataSource="${snapshot}" var="vol">
 SELECT * from vol ORDER BY vol_id DESC;

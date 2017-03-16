@@ -7,7 +7,7 @@ String userid = request.getParameter("user");
 String pwd = request.getParameter("password");
 String cv = request.getParameter("1");
 Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:1400/tapchikhspkt","root", "12345678");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tapchikhspkt","root", "12345678");
 Statement st = con.createStatement();
 ResultSet rs;
 rs = st.executeQuery("select * from members where username='" + userid + "'and password='" + pwd + "' and position='"+ cv +"' and trangthai = 'unblock'");
