@@ -4,7 +4,7 @@
 <%
 String id = request.getParameter("id");
 Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:1400/tapchikhspkt","root", "12345678");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tapchikhspkt","root", "12345678");
 Statement st = con.createStatement();
 String sql = "UPDATE members SET yeucau ='T' WHERE username='"+id+"'";
 st.executeUpdate(sql);

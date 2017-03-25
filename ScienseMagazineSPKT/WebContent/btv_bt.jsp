@@ -117,7 +117,7 @@
 		<div class="tab-content">
 			<div id="" class="tab-pane fade in active">
 				<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-					url="jdbc:mysql://localhost:1400/tapchikhspkt" user="root"
+					url="jdbc:mysql://localhost:3306/tapchikhspkt" user="root"
 					password="12345678" />
 				<sql:query dataSource="${snapshot}" var="result">
 SELECT * from baiviet where baiviet_id=? ;

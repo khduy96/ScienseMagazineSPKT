@@ -7,7 +7,7 @@
 	String[] addresses = request.getParameterValues("address");
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection con = DriverManager.getConnection(
-			"jdbc:mysql://localhost:1400/tapchikhspkt", "root",
+			"jdbc:mysql://localhost:3306/tapchikhspkt", "root",
 			"12345678");
 	if (ids != null) {
 		for ( int i = 0; i <= ids.length - 1; i++) {

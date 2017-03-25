@@ -4,7 +4,7 @@
 <%
 String id = request.getParameter("id");
 Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:1400/tapchikhspkt","root", "12345678");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tapchikhspkt","root", "12345678");
 Statement st = con.createStatement();
 String sqls = "select * from baiviet  WHERE baiviet_id='"+id+"' and trangthai='chuaduyet' ";
 ResultSet rs;

@@ -112,7 +112,7 @@
 		<div class="tab-content">
 			<div id="" class="tab-pane fade in active">
 				<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-					url="jdbc:mysql://localhost:1400/tapchikhspkt" user="root"
+					url="jdbc:mysql://localhost:3306/tapchikhspkt" user="root"
 					password="12345678" />	
 					<c:set var="empId" value="<%=asd%>"/>
 				<sql:query dataSource="${snapshot}" var="result">

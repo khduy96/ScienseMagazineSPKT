@@ -45,7 +45,7 @@
 </head>
 <body>
 	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:1400/tapchikhspkt" user="root"
+		url="jdbc:mysql://localhost:3306/tapchikhspkt" user="root"
 		password="12345678" />
 	<div class="container-fluid">
 		<div class="row">

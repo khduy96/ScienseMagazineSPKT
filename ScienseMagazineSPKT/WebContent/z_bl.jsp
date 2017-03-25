@@ -17,7 +17,7 @@ String cv = request.getParameter("cv");
 if((binhluan!= ""))
 {
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:1400/tapchikhspkt?useUnicode=true&characterEncoding=UTF-8","root", "12345678");
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tapchikhspkt?useUnicode=true&characterEncoding=UTF-8","root", "12345678");
 	Statement st = con.createStatement();
 	String sql = "INSERT INTO binhluan (baiviet_id, binhluan, username, ngay, cv) VALUES ('"+idbv+"', N'"+binhluan+"', '"+user+"', now(),'"+cv+"');";
 	st.executeUpdate(sql);
